@@ -1,4 +1,4 @@
-name: call sheet generator
+name: callsheetgenerator
 version: "0.10"
 summary: JSpdf powered call sheet generator for photo shoots/productions ina snap
 description: a JSpdf powered call sheet generator for photo shoots/productions 
