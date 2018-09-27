@@ -1,13 +1,7 @@
-  name: call sheet generator
-  version: '0.1'
-  summary: a JSpdf powered call sheet generator for photo shoots/productions 
-  description: a JSpdf powered call sheet generator for photo shoots/productions 
+name: call sheet generator
+version: "0.10"
+summary: JSpdf powered call sheet generator for photo shoots/productions ina snap
+description: a JSpdf powered call sheet generator for photo shoots/productions 
     to get everything organized into a handy PDF for email to PA and the rest of production
-
-  confinement: strict
-grade: stable
-
-parts:
-  nil-part:
-    plugin: nil
-  
+grade: devmode
+confinement: strict
