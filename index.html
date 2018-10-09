@@ -6,27 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>CALL SHEET GENERATOR</title>
 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous"> 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
-   
+
   </head>
   <body>
 	 <html>
 <head>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
 <script src="https://unpkg.com/jspdf@latest/dist/jspdf.min.js"></script>
-"></script>
+</script>
 </head>
 <body>
 
-<div
+<div>
 
 <p><center>A simple call sheet generator that you can use on the go or at your desktop!<br>The generator creates a nice,simple handy PDF of your production!<br><br>powered by jsPDF<br><br><br><br>
 	 Name of Production<br><input type="text" id="name" value=""/ placeholder="Name of production"><br>Production date:<br>
    Month
-   <select name='month' id='datemonth'style="max-width:50px;">
+   <select name='month' id='datemonth'style="max-width:75px;">
    <option value='1'>1</option>
    <option value='2'>2</option>
    <option value='3'>3</option>
@@ -41,7 +41,7 @@
    <option value='12'>12</option>
    </select>
    Day
-<select name='day' id='dateday' style="max-width:50px;">
+<select name='day' id='dateday' style="max-width:75px;">
 <option value='1'>1</option>
 <option value='2'>2</option>
 <option value='3'>3</option>
@@ -75,7 +75,7 @@
 <option value='31'>31</option>
 </select>
 Year
-<select name='year' id='dateyear'style="max-width:50px;">
+<select name='year' id='dateyear'style="max-width:75px;">
 <option value='2018'>2018</option>
 <option value='2019'>2019</option>
 <option value='2020'>2020</option>
@@ -1608,7 +1608,7 @@ Year
       doc.text(10, 285, 'Stylist: ' + stylistinfo);
       doc.text(10, 290, 'Craft services: ' + craftinfo);
       doc.setFontSize(8);
-      doc.text(50, 295, 'Created using Call sheet Generator https://afcbrandon.github.io/callsheetgenerator/');
+      doc.text(75, 295, 'Created using Call sheet Generator https://afcbrandon.github.io/callsheetgenerator/');
       doc.setFontSize(10);
 
       var splitText = doc.splitTextToSize(text, 175);
