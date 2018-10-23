@@ -427,6 +427,12 @@
                              </div>
                              <input type="text" id="shotfour" value="" class="form-control" placeholder="Fourth shot">
                            </div>
+                           <div class="input-group input-group mb-3">
+                             <div class="input-group-prepend">
+                               <span class="input-group-text" id="inputGroup-sizing-sm">5.</span>
+                             </div>
+                             <input type="text" id="shotfive" value="" class="form-control" placeholder="Fifth shot">
+                           </div>
                         </div>
                      </div>
                </div>
@@ -1516,6 +1522,7 @@
 	  var shottwo = $('#shottwo').val();
 	  var shotthree = $('#shotthree').val();
 	  var shotfour = $('#shotfour').val();
+    var shotfive = $('#shotfive').val();
       doc.setFontSize(20);
       doc.text(105, 8, name, null, null, 'center' )
       doc.text(105, 15, 'Call Sheet', null, null, 'center');
@@ -1529,11 +1536,12 @@
       doc.text(10, 60, 'Lunch: ' + craftyn);
       doc.text(10, 80, 'Production notes: ');
       doc.text(10, 110, 'Production Concept: ');
-	    doc.text(10, 150, 'Shot List');
-	    doc.text(5, 155, '1: ');
-	    doc.text(5, 170, '2: ');
-	    doc.text(5, 185, '3: ');
-	    doc.text(5, 200, '4: ');
+	    doc.text(100, 150, 'Shot List');
+	    doc.text(5, 155, '1: ' + shotone);
+	    doc.text(5, 170, '2: ' + shottwo);
+	    doc.text(5, 185, '3: ' + shotthree);
+	    doc.text(5, 200, '4: ' + shotfour);
+      doc.text(5, 215, '5: ' + shotfive);
       doc.text(170, 25, 'CALL TIMES', null, null, 'center');
       doc.text(150, 30, 'Production: ' + prodtime);
       doc.text(150, 35, 'Photographer: ' + photocall);
